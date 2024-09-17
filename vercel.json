@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/amo-crm-api/:path(.*)",
+      "source": "/amo-crm-api/(.*)",
       "destination": "https://bf2iskan.amocrm.ru/api/v4"
     },
     { "source": "/(.*)", "destination": "/index.html" }
