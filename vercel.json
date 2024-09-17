@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    {
+      "source": "/amo-crm-api/:path(.*)",
+      "destination": "https://bf2iskan.amocrm.ru/api/v4"
+    },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
