@@ -1,8 +1,6 @@
-import { loadEnv } from "vite";
 export default async function handler(req, res) {
-  const env = loadEnv("all", process.cwd());
-  const apiBaseDomen = env.VITE_API_BASE_AMO_DOMEN;
-  const apiAuthorization = env.VITE_API_AUTHORIZATION;
+  const apiBaseDomen = process.env.VITE_API_BASE_AMO_DOMEN;
+  const apiAuthorization = process.env.VITE_API_AUTHORIZATION;
 
   const url = `https://${apiBaseDomen}.amocrm.ru/api/v4/${req.query["0"]}`;
 
